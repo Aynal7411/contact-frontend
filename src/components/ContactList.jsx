@@ -90,7 +90,7 @@ const ContactList = () => {
                   </div>
                 </div>
               </div>
-
+  
               {/* Contact Table */}
               <div className="card-body">
                 {filteredContacts.length === 0 ? (

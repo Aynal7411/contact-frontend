@@ -4,7 +4,7 @@ import { Search, Filter } from 'react-bootstrap-icons';
 
 const SearchFilter = ({ searchTerm, setSearchTerm, filterType, setFilterType }) => {
   return (
-    <div className="d-flex align-items-center gap-3 w-50">
+    <div className="d-flex align-items-center gap-3">
       {/* Search Input */}
       <InputGroup>
         <InputGroup.Text>
@@ -16,10 +16,11 @@ const SearchFilter = ({ searchTerm, setSearchTerm, filterType, setFilterType }) 
           onChange={(e) => setSearchTerm(e.target.value)}
         />
       </InputGroup>
-      
+
+       <div className="mt-2 w-25">
       {/* Filter Dropdown */}
       <Dropdown>
-        <Dropdown.Toggle variant="outline-secondary">
+        <Dropdown.Toggle variant="outline-secondary" className='d-flex align-items-center justify-content-between p-3'>
           <Filter className="me-2" />
           Filter
         </Dropdown.Toggle>
@@ -51,6 +52,7 @@ const SearchFilter = ({ searchTerm, setSearchTerm, filterType, setFilterType }) 
           </Dropdown.Item>
         </Dropdown.Menu>
       </Dropdown>
+      </div>
     </div>
   );
 };

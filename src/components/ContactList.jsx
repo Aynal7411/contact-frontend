@@ -76,7 +76,7 @@ const ContactList = () => {
                   <SearchFilter 
                     searchTerm={searchTerm}
                     setSearchTerm={setSearchTerm}
-                     className="me-3 p-2 border rounded bg-light"
+                    className="me-3 p-2 border rounded bg-light"
                   />
                   
                   <div>

@@ -13,16 +13,17 @@ body {
 }
 
 .navbar-light .navbar-nav .active > .nav-link {
-  color: #435d7d;
+  color: hwb(213 26% 51%);
 }
 
-
+.card-title {
+  margin-bottom: 0;
+  font-weight: 600;
+  font-size: 1.25rem;
+   background: #435d7d;
+}
 .btn-circle {
-  width: 30px;
-  height: 30px;
-  text-align: center;
-  padding: 6px 0;
-  font-size: 12px;
-  line-height: 1.428571429;
-  border-radius: 15px;
+  height: 40px;
+  width: auto;
+ 
 }

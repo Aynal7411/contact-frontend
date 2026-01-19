@@ -68,7 +68,7 @@ const ContactList = () => {
           <div className="col-md-12">
             <div className="card ">
               {/* Header with Search and Add Button */}
-              <div className="card-header card-title bg-dark text-white">
+              <div className="card-header card-title bg-gray text-white">
                 <div className="d-flex align-items-center justify-content-between">
                   <h2>All Contacts</h2>
                   
@@ -83,8 +83,9 @@ const ContactList = () => {
                     <Button 
                       variant="success" 
                       onClick={() => setShowAddModal(true)}
+                      className='btn-circle'
                     >
-                      <PlusCircle className="me-1" />
+                      <PlusCircle  className="me-1" />
                       Add New
                     </Button>
                   </div>

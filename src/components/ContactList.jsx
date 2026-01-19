@@ -5,6 +5,7 @@ import { Eye, Pencil, Trash, PlusCircle } from 'react-bootstrap-icons';
 import ContactFormModal from './ContactFormModal';
 import ContactViewModal from './ContactViewModal';
 import SearchFilter from './SearchFilter';
+import FilterDropdown from './FilterDropdown';
 
 const ContactList = () => {
   const { contacts, loading, error, deleteContact } = useContacts();
@@ -75,8 +76,7 @@ const ContactList = () => {
                   <SearchFilter 
                     searchTerm={searchTerm}
                     setSearchTerm={setSearchTerm}
-                    filterType={filterType}
-                    setFilterType={setFilterType}
+                     className="me-3 p-2 border rounded bg-light"
                   />
                   
                   <div>
@@ -91,7 +91,13 @@ const ContactList = () => {
                   </div>
                 </div>
               </div>
-  
+<div className="d-flex justify-content-end mt-2 w-25">    
+  <FilterDropdown 
+    filterType={filterType} 
+    setFilterType={setFilterType} 
+  />
+</div>
+
               {/* Contact Table */}
               <div className="card-body">
                 {filteredContacts.length === 0 ? (

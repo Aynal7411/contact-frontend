@@ -12,7 +12,9 @@ function App() {
         <nav className="navbar navbar-expand-lg navbar-light ">
           <div className="container">
             <a className="navbar-brand text-uppercase fw-bold" href="#">
-              <h1 className="h3 m-0 "><strong>CONTACT APP</strong></h1>
+             <h1 className="h5 m-0 text-danger">
+  <strong>CONTACT APP</strong>
+</h1>
             </a>
           </div>
         </nav>

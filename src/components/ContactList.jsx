@@ -187,11 +187,15 @@ const ContactList = () => {
 
       <ContactViewModal
         show={showViewModal}
-        handleClose={() => setShowViewModal(false)}
+        onHide={() => setShowViewModal(false)}
         contact={selectedContact}
         onEdit={() => {
           setShowViewModal(false);
           setShowEditModal(true);
+        }}
+        onDelete={(id) => {
+          setShowViewModal(false);
+          handleDelete(id);
         }}
       />
 
